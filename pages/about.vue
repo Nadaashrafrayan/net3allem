@@ -1,13 +1,16 @@
 <template>
+  <main class="min-h-screen">
+
+  <div class="">
 <VisMis/>
-<ourStratgy></ourStratgy>
+<ourStratgy></ourStratgy> 
 <ourValues></ourValues>
 <program></program>
 <section class="flex flex-col items-center justify-center  bg-white mt-8">
-  <h2 class="text-[46px] font-extrabold text-OurGreen font-sans uppercase tracking-[0.12em] leading-relaxed py-24">
+  <h2 class="text-[46px] font-extrabold text-OurGreen font-sans uppercase tracking-[0.12em] leading-relaxed md:py-24 py-10">
     Our Model  </h2>
-  <img       class="mt-3 max-w-screen-lg  object-cover  w-full h-full" src="/about/image.png"></section>
-  <paper></paper>
+  <img       class="mt-3 max-w-screen-lg px-2  object-cover  w-full h-full" src="/about/image.png"></section>
+  <paper></paper></div></main>
 </template>
 <script>
 import ourStratgy from '~/components/about/ourStratgy.vue';

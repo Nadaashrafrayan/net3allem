@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col items-center justify-center md:min-h-screen bg-white md:mt-24 mt-0">
+  <section class="flex flex-col items-center justify-center md:min-h-screen bg-white md:mt-24 mt-12">
     <div class="text-center mb-8">
       <h1 class="md:text-[56px] text-3xl font-extrabold text-ourOrange font-sans uppercase tracking-[0.13em] leading-loose md:mb-14 mb-6">
         Net3allem's Program

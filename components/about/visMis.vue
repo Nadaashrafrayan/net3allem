@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col items-center justify-center  bg-white px-6 text-center space-y-10 py-10">
     <!-- Title -->
-    <h2 class="text-[56px] font-[1000] text-ourOrange font-sans uppercase tracking-[0.2em]" style="font-family:'lulo-clean-w05-one-bold', sans-serif;">
+    <h2 class="md:text-[56px] text-4xl font-[1000] text-ourOrange font-sans uppercase tracking-[0.2em]" style="font-family:'lulo-clean-w05-one-bold', sans-serif;">
       About Us
     </h2>
     
@@ -36,9 +36,7 @@
 </template>
 
 <script>
-export default {
-  name: "AboutUsSection"
-};
+
 </script>
 
 <style scoped>
