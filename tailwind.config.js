@@ -39,14 +39,9 @@ export default {
     extend: {
       colors: {
         // Purple Shades
-        purple60: "#703BF7",
-        purple65: "#1A64FF",
-        purple70: "#FF9533",
-        purple75: "#FFCA99",
-        purple90: "#FFE4CC",
-        purple95: "#FFF1E5",
-        purple97: "#FFF7F0",
-        purple99: "#FFFCFA",
+        OurGreen: "#14A697",
+      ourPurple:"#A6296E",
+      ourOrange:"#F2522E",
 
         // White Shades
         white90: "#E4E4E7",
@@ -55,13 +50,13 @@ export default {
         white99: "#FCFCFD",
 
         // Grey Shades
-        grey8: "#141414",
+        ourGrey: "#C4C4C4",
         grey10: "#1A1A1A",
         grey15: "#262626",
-        grey20: "#333333",
+        grey20: "#A0A0A0",
         grey30: "#4D4D4D",
-        grey40: "#666666",
-        grey50: "#808080",
+        grey40: "#7A7A7A",
+        grey50: "#525252",
         grey60: "#999999",
       },
     },

@@ -1,10 +1,13 @@
 <!-- pages/index.vue -->
 <template>
   <Header />
-  <NuxtPage class="bg-grey8 text-white"/>
+  <NuxtPage class=""/>
+  <Footerr/>
 </template>
 
 <script setup>
+
+import Footerr from './components/layout/footerr.vue';
 useHead({
   link: [
     {
