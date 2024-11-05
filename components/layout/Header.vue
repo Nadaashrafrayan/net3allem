@@ -25,8 +25,8 @@
         </NuxtLink>
         <div class="relative group">
           <NuxtLink
-            to="/evaluation"
-            :class="{ 'text-ourOrange': isActiveRoute('/evaluation') }"
+            to="/evaluation/impact"
+            :class="{ 'text-ourOrange': isActiveRoute('/evaluation/impact') }"
             class="text-grey50 text-base font-thin"
           >
             Evaluation

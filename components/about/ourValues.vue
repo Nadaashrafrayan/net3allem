@@ -5,7 +5,7 @@
         {{ topTitle }}
       </h2>
 
-      <p class="mt-4 max-w-4xl  text-base  text-ourGrey  animate__animated animate__fadeInLeftBig tracking-[0.12em] leading-loose py-4">{{ text }}</p>
+      <p class="mt-4 max-w-4xl  text-base  text-ourGrey  animate__animated animate__fadeInLeftBig animate__delay-3s tracking-[0.12em] leading-loose py-4">{{ text }}</p>
     </div>
     <div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8 mb-6">
       <div
