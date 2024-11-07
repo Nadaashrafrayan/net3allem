@@ -1,0 +1,155 @@
+<template>
+  <div class="bg-OurGreen">
+    <div class="  flex flex-col items-center justify-center md:min-h-screen  px-8 md:max-w-2xl  w-full py-10  md:mx-auto">
+      <h2 :class="titleClasses" class="  md:w-[550px] w-[227px] self-center font-sans mb-8">{{ title }}</h2>
+
+      <form @submit.prevent="submitForm" class=" md:space-y-2 space-y-3 text-ourGrey md:w-[540px]  w-full  md:p-10 p-5  bg-white " >
+        <!-- Name Field -->
+        <div>
+          <label for="name" class="block text-gray-400 font-thin text-xs mb-1">Name*</label>
+          <input
+            type="text"
+            id="name"
+            v-model="form.name"
+            required
+            placeholder="Your Name"
+            class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:border-gray-400"
+          />
+        </div>
+
+        <!-- Email Field -->
+        <div>
+          <label for="email" class="block text-gray-400 text-xs font-thin mb-1">Email*</label>
+          <input
+            type="email"
+            id="email"
+            v-model="form.email"
+            required
+            placeholder="Your Email"
+            class="w-full border border-gray-300 p-3  rounded-md focus:outline-none focus:border-gray-400"
+          />
+        </div>
+
+        <!-- Code and Phone Field -->
+        <div class="flex space-x-2">
+          <div class="w-1/3">
+            <label for="code" class="block text-gray-400 text-xs font-thin mb-1">Code*</label>
+            <!-- Custom dropdown for country codes -->
+            <div class="relative">
+              <button
+                @click="toggleDropdown"
+                type="button"
+                class="w-full border border-gray-300 p-3 rounded-md bg-gray-50 text-gray-400 focus:outline-none flex justify-between items-center"
+              >
+                {{ selectedCode }} <span class="ml-2">▼</span>
+              </button>
+              <ul v-show="isDropdownOpen" class="absolute w-full bg-white border border-gray-300 rounded-md max-h-40 overflow-y-auto mt-1 z-10">
+                <li
+                  v-for="country in countryCodes"
+                  :key="country.iso2"
+                  @click="selectCode(country.dialCode)"
+                  class="cursor-pointer p-2 hover:bg-gray-200 text-yellow-500 uppercase"
+                >
+                  {{ country.iso2 }} {{ country.dialCode }}
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-2/3">
+            <label for="phone" class="block text-gray-400 text-xs font-thin mb-1">Phone*</label>
+            <input
+              type="tel"
+              id="phone"
+              v-model="form.phone"
+              required
+              placeholder="Phone Number"
+              class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:border-gray-400"
+            />
+          </div>
+        </div>
+
+        <!-- Message Field -->
+        <div>
+          <label for="message" class="block text-gray-400 text-xs font-thin mb-1">Write a message*</label>
+          <textarea
+            id="message"
+            v-model="form.message"
+            required
+            placeholder="Your Message"
+            rows="4"
+            class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:border-gray-400"
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-left">
+          <button
+            type="submit"
+            class=" text-white py-2 px-14 text-opacity-80 bg-OurGreen hover:bg-transparent hover:text-gray-500 hover:border hover:border-gray-500 focus:outline-none mt-5"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+import { allCountries } from 'country-telephone-data'
+
+// Define props for dynamic title and styling
+const props = defineProps({
+  title: {
+    type: String,
+    default: 'Contact Form', // Default title
+  },
+  containerClasses: {
+    type: String,
+    default: 'bg-white shadow-lg rounded-lg p-8  w-full', // Default container styles
+  },
+  titleClasses: {
+    type: String,
+    default: 'text-2xl font-bold mb-6 text-center', // Default title styles
+  }
+})
+
+// List of countries and their dial codes for the dropdown
+const countryCodes = allCountries.map((country) => ({
+  name: country.name,
+  dialCode: `+${country.dialCode}`,
+  iso2: country.iso2
+}))
+
+// Reactive form data
+const form = ref({
+  name: '',
+  email: '',
+  selectedCode: '+20',  // Default to country code +20 (Egypt)
+  phone: '',
+  message: ''
+})
+
+// Dropdown state
+const isDropdownOpen = ref(false)
+const selectedCode = ref(form.value.selectedCode)
+
+// Form submission handler
+const submitForm = () => {
+  console.log("Form Submitted:", form.value)
+  // You can send the form data to an API here or perform further processing
+}
+
+// Toggle dropdown visibility
+const toggleDropdown = () => {
+  isDropdownOpen.value = !isDropdownOpen.value
+}
+
+// Select country code from dropdown
+const selectCode = (code) => {
+  selectedCode.value = code
+  form.value.selectedCode = code
+  isDropdownOpen.value = false
+}
+</script>

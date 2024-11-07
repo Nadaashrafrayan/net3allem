@@ -6,7 +6,7 @@
     </h2>
     
     <!-- Description -->
-    <p class="max-w-3xl text-ourGrey text-base leading-relaxed">
+    <p class="max-w-3xl text-gray-400 text-base leading-relaxed">
       We're here to catch those who fall behind during the early years of life and lead the fight for equitable access to education.
       <br /><br />
       We're here to end the vicious cycle that continues to disadvantage vulnerable populations.

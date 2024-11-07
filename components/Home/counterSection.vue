@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col items-center justify-center text-center md:px-4 pb-4 px-14 text-grey20">
+  <section class="flex flex-col items-center justify-center text-center max-h-screen md:px-4  px-14 text-grey20">
     <!-- Main Title -->
     <h2 class="text-2xl font-extrabold uppercase tracking-[0.18em] text-ourOrange">
       Net3allem has served over
