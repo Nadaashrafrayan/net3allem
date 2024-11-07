@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col items-center justify-center text-center max-h-screen md:px-4  px-14 text-grey20">
+  <section class="flex flex-col items-center justify-center text-center md:px-4 pb-8 px-14 text-grey20">
     <!-- Main Title -->
     <h2 class="text-2xl font-extrabold uppercase tracking-[0.18em] text-ourOrange">
       Net3allem has served over
@@ -53,7 +53,7 @@ export default {
   methods: {
     startCounter() {
       // Counter animation using setInterval
-      const increment = Math.ceil(this.target / 30); // Adjust speed based on the target
+      const increment = Math.ceil(this.target / 50); // Adjust speed based on the target
       this.interval = setInterval(() => {
         if (this.counter < this.target) {
           this.counter += increment;
