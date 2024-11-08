@@ -1,11 +1,11 @@
 <template>
 <div>
 <Slider></Slider>
-<div class="flex items-center justify-center py-16 max-w-3xl mx-auto ">
+<div class="flex items-center justify-center py-16 md:max-w-3xl mx-auto ">
   <!-- Centered Section -->
-  <div class="flex flex-row items-start space-x-6 ">
+  <div class="flex md:flex-row flex-col items-start spae-y-4  space-x-6  p-5 ">
     <!-- Title -->
-    <h2 class="text-6xl text-ourGrey font-bold mb-4  tracking-[0.2em]">In the News</h2>
+    <h2 class="md:text-6xl text-4xl text-ourGrey font-bold mb-4  md:tracking-[0.2em] tracking-widest">In the News</h2>
     
     <!-- List of Links -->
     <ul class="flex flex-col list-disc text-ourPurple space-y-2 leading-loose tracking-[0.2]" >

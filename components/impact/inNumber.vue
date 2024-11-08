@@ -40,7 +40,9 @@
 
         <!-- Second Row of 2 Columns -->
         <div class="grid grid-flow-row md:grid-cols-2 gap-y-14 gap-x-6 place-items-center">
-          <div v-for="(item, index) in afterNet3allemStats.slice(3)" :key="index" class="text-center max-w-6xl space-y-3 place-self-center tracking-widest animate__animated  animate__zoomIn animate__delay-1s animate__slow">
+          <div v-for="(item, index) in afterNet3allemStats.slice(3)" :key="index" 
+          
+          class="text-center max-w-6xl space-y-3 place-self-center tracking-widest animate__animated  animate__zoomIn animate__delay-1s animate__slow">
             <span class="text-3xl font-bold text-ourOrange">{{ item.value }}</span>
             <p class="text-xs text-gray-400 ">{{ item.description }}</p>
           </div>
