@@ -48,7 +48,7 @@
       <!-- houses section  -->
       <section class="flex flex-col items-center py-20">
         <!-- Image at the top -->
-        <img src="public/banners/houses.webp" alt="Houses" class="w-full md:h-auto h-[209px] object-cover animate__animated  animate__fadeInUp  animate__delay-1s " />
+        <img src="public/banners/houses.webp" alt="Houses" class="w-full md:h-auto h-[209px] object-cover animate__animated  animate__fadeInUp animate__slow animate__delay-0.5s " />
       
         <!-- Text Box -->
         <div class=" w-full bg-opacity-90 bg-OurGreen md:py-10  md:px-[27%] p-10 text-center">

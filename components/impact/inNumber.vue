@@ -17,9 +17,9 @@
     <div class="w-full md:w-1/2 flex flex-col items-center py-16 bg-white px-16 ">
       <!-- Before Net3allem Section -->
       <div class="w-full mb-16">
-        <h3 class="text-4xl font-extrabold text-ourGrey mb-14 text-center">Before Net3allem</h3>
+        <h3 class="text-4xl font-extrabold text-ourGrey mb-14 text-center animate__animated  animate__slideInLeft animate__delay-1s animate__slow">Before Net3allem</h3>
         <div class="grid md:grid-cols-2 grid-flow-row gap-y-8 gap-x-6 place-items-center">
-          <div v-for="(item, index) in beforeNet3allemStats" :key="index" class="text-center space-y-3 place-self-center tracking-widest">
+          <div v-for="(item, index) in beforeNet3allemStats" :key="index" class="text-center space-y-3 place-self-center tracking-widest animate__animated  animate__zoomIn animate__delay-1s animate__slow">
             <span class=" text-3xl font-bold text-OurGreen">{{ item.value }}</span>
             <p class="text-sm mx-4 text-gray-400">{{ item.description }}</p>
           </div>
@@ -28,11 +28,11 @@
 
       <!-- After Net3allem Section -->
       <div class="w-full">
-        <h3 class="text-4xl font-extrabold text-ourGrey mb-14 text-center">After Net3allem</h3>
+        <h3 class="text-4xl font-extrabold text-ourGrey mb-14 text-center animate__animated  animate__slideInLeft animate__delay-1s animate__slow">After Net3allem</h3>
         
         <!-- First Row of 3 Columns -->
         <div class="grid md:grid-cols-3 grid-flow-row gap-y-14 gap-x-6 place-items-center mb-8 ">
-          <div v-for="(item, index) in afterNet3allemStats.slice(0, 3)" :key="index" class="text-center max-w-xl place-self-center space-y-3 leading-relaxed tracking-widest">
+          <div v-for="(item, index) in afterNet3allemStats.slice(0, 3)" :key="index" class="text-center max-w-xl place-self-center space-y-3 leading-relaxed tracking-widest animate__animated  animate__zoomIn animate__delay-1s animate__slow">
             <span class="text-3xl font-bold text-ourOrange">{{ item.value }}</span>
             <p class="text-xs text-gray-400">{{ item.description }}</p>
           </div>
@@ -40,7 +40,7 @@
 
         <!-- Second Row of 2 Columns -->
         <div class="grid grid-flow-row md:grid-cols-2 gap-y-14 gap-x-6 place-items-center">
-          <div v-for="(item, index) in afterNet3allemStats.slice(3)" :key="index" class="text-center max-w-6xl space-y-3 place-self-center tracking-widest">
+          <div v-for="(item, index) in afterNet3allemStats.slice(3)" :key="index" class="text-center max-w-6xl space-y-3 place-self-center tracking-widest animate__animated  animate__zoomIn animate__delay-1s animate__slow">
             <span class="text-3xl font-bold text-ourOrange">{{ item.value }}</span>
             <p class="text-xs text-gray-400 ">{{ item.description }}</p>
           </div>
