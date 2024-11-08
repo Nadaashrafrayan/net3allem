@@ -1,4 +1,4 @@
-<template><div class="max-w-fit">
+<template><div class="">
   <section class="flex flex-col items-center justify-center min-h-screen md:max-w-screen-md max-w-screen-sm mx-auto py-24 bg-white px-4">
     <!-- Title -->
     <h2 class="md:text-[56px] text-4xl stroke-ourPurple stroke-1 font-[1000] text-ourPurple font-sans uppercase tracking-[0.28em] mb-28" style="font-family: 'lulo-clean-w01-one-bold', 'lulo-clean-w05-one-bold', sans-serif;">Partners</h2>

@@ -3,12 +3,20 @@
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex items-center justify-center flex-1 space-x-6 container">
       <!-- Desktop Logo on the Left for Large Screens -->
+     
       <div class="flex items-center justify-start flex-none mr-auto">
-        <img src="../../assets/images/logo/Logo.png" alt="Logo" class="h-20" />
+        <NuxtLink
+        to="/"
+        class="text-grey50 text-base font-thin"
+      >
+        <img src="../../assets/images/logo/Logo.png" alt="Logo" class="h-20" /></NuxtLink>
       </div>
 
       <!-- Menu Items in the Center for Large Screens -->
-      <div class="flex-2 flex justify-center space-x-6 px-12">
+      <div class="flex-2 flex justify-center space-x-6 px-12"
+      :class="{ 'pr-56': isActiveRoute('/Zakah') }"
+
+      >
         <NuxtLink
           to="/"
           :class="{ 'text-ourOrange': isActiveRoute('/') }"
@@ -95,10 +103,12 @@
 
       <!-- Zakah Calculator Button on the Right for Large Screens -->
       <div class="flex-none ml-auto">
-        <NuxtLink to="/Zakah">
-        <button class="text-ourGrey py-2 px-4 border-l-2 border-ourOrange hover:bg-ourOrange hover:text-white  flex items-center">
+        <NuxtLink to="/Zakah"
+        :class="{ 'hidden': isActiveRoute('/Zakah') }"
+        >
+        <button class="text-ourGrey py-2 px-4 border-l-2 border-ourOrange hover:bg-ourOrange hover:text-white hover:fill-white fill-ourOrange flex items-center">
           Zakah Calculator
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="96" viewBox="0 0 24 24" class="h-10 w-10 ml-4 hover:fill-white fill-ourOrange">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="96" viewBox="0 0 24 24" class="h-10 w-10 ml-4 ">
             <path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v4h10V4zm0 6v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z" />
           </svg>
         </button></NuxtLink>
@@ -108,16 +118,20 @@
     <!-- Mobile View -->
     <div class="md:hidden flex items-center justify-between py-2 px-4 w-full">
       <!-- Zakah Calculator Button for Mobile -->
- <NuxtLink to="/Zakah">
-      <button class="text-ourGrey rounded-lg text-[10px] flex flex-col items-center text-center">
+<NuxtLink to="/Zakah"
+        :class="{ 'hidden': isActiveRoute('/Zakah') }"
+        >      <button class="text-ourGrey rounded-lg text-[10px] flex flex-col items-center text-center">
         <img src="../../assets/images/icons/calc.svg" alt="Calculator Icon" class="h-8 w-8 mb-1" />
         Zakah Calculator
       </button>
 </NuxtLink>
       <!-- Mobile Logo -->
-      <img src="../../assets/images/logo/Logo.png" alt="Logo" class="h-14 w-16 self-center mr-5 mb-2" />
-
+      <NuxtLink
+      to="/"      class="text-grey50 text-base font-thin"
+    ><img src="../../assets/images/logo/Logo.png" alt="Logo" class="h-14 w-16 self-center mr-5 mb-2" />
+</NuxtLink>
       <!-- Mobile Menu Toggle Button -->
+       
       <button @click="toggleMenu" class="text-ourGrey">
         <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24">
           <path fill="currentColor" d="M3 4h18v2H3zm0 7h18v2H3zm0 7h18v2H3z" />
@@ -199,8 +213,14 @@ export default {
       }
     },
     isActiveRoute(route) {
-      return this.$route.path.startsWith(route);
-    },
+  // If the route is '/', check for an exact match with '/'
+  if (route === '/') {
+    return this.$route.path === '/';
+  }
+  // For other routes, check if they start with the provided path
+  return this.$route.path.startsWith(route);
+},
+
   },
   mounted() {
     window.addEventListener('resize', this.handleResize);
