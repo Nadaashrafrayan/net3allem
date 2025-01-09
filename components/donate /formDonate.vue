@@ -1,7 +1,7 @@
 <template>
   <div class="bg-OurGreen">
     <div class="  flex flex-col items-center justify-center md:min-h-screen  px-8 md:max-w-2xl  w-full py-10  md:mx-auto">
-      <h2 :class="titleClasses" class="  md:w-[550px] w-[227px] self-center font-sans mb-8">{{ title }}</h2>
+      <h2 :class="titleClasses" class="  md:w-[550px] w-[227px] self-center  mb-8">{{ title }}</h2>
 
       <form @submit.prevent="submitForm" class=" md:space-y-2 space-y-3 text-ourGrey md:w-[540px]  w-full  md:p-10 p-5  bg-white " >
         <!-- Name Field -->

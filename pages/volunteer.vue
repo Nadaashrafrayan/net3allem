@@ -2,7 +2,7 @@
   <div>
     <section class="flex flex-col items-center justify-center  bg-white px-14 text-center space-y-14 pt-10">
 
-      <h2 class="md:text-[56px] text-4xl font-[1000] text-ourPurple font-sans uppercase tracking-[0.16em] my-14" style="font-family:'lulo-clean-w05-one-bold', sans-serif;">
+      <h2 class="md:text-[56px] text-4xl font-[1000] text-ourPurple   uppercase tracking-[0.16em] my-14" style="font-family:'lulo-clean-w05-one-bold', sans-serif;">
         Volunteer With Us   </h2>
         <div class="bg-ourGreen text-white bg-OurGreen py-14  px-10  w-full">
               <p class="md:text-[42px]  text-[22px] font-bold font-serif  leading-relaxed animate__animated  animate__zoomIn animate__delay-0.5s animate__slow">

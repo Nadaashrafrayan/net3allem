@@ -83,9 +83,9 @@
         <div class="mb-6">
           <h3 class="text-xl text-ourPurple font-semibold underline mb-2">Sarah Frandsen</h3>
           <div class="flex flex-col  md:flex-row gap-4">
-            <img src="public/about/sarah1.webp" alt="Sarah Frandsen Image 1" class="w-full h-24 object-cover ">
-            <img src="public/about/sarah2.webp" alt="Sarah Frandsen Image 2" class="w-full h-24 object-cover ">
-            <img src="public/about/sarah3.webp" alt="Sarah Frandsen Image 3" class=" text-left w-full h-24 object-cover ">
+            <img loading="lazy" src="public/about/sarah1.webp" alt="Sarah Frandsen Image 1" class="w-full h-24 object-cover ">
+            <img loading="lazy" src="public/about/sarah2.webp" alt="Sarah Frandsen Image 2" class="w-full h-24 object-cover ">
+            <img loading="lazy" src="public/about/sarah3.webp" alt="Sarah Frandsen Image 3" class=" text-left w-full h-24 object-cover ">
           </div>
         </div>
 
@@ -93,8 +93,8 @@
         <div class="mb-5 md:mb-10">
           <h3 class="text-xl text-ourPurple font-semibold underline mb-4">Mariam Tag</h3>
           <div class="flex flex-col md:flex-row gap-4 ">
-            <img src="public/about/mariam1.png" alt="Mariam Tag Image 1" class="w-2/3 h-24 object-contain ">
-            <img src="public/about/mariam2.png" alt="Mariam Tag Image 2" class="w-full h-24 object-contain ">
+            <img loading="lazy" src="public/about/mariam1.png" alt="Mariam Tag Image 1" class="w-2/3 h-24 object-contain ">
+            <img loading="lazy" src="public/about/mariam2.png" alt="Mariam Tag Image 2" class="w-full h-24 object-contain ">
           </div>
         </div>
 
@@ -102,8 +102,8 @@
         <div class="mb-10">
           <h3 class="text-xl text-ourPurple font-semibold underline mb-4">Nadine El Ashkar</h3>
           <div class="flex flex-col md:flex-row gap-4 ">
-            <img src="public/about/sarah2.webp" alt="Sarah Frandsen Image 2" class="w-full h-24 object-cover ">
-            <img src="public/about/sarah3.webp" alt="Nadine El Ashkar Image 2" class="w-full h-24 object-contain ">
+            <img loading="lazy" src="public/about/sarah2.webp" alt="Sarah Frandsen Image 2" class="w-full h-24 object-cover ">
+            <img loading="lazy" src="public/about/sarah3.webp" alt="Nadine El Ashkar Image 2" class="w-full h-24 object-contain ">
           </div>
         </div>
       </div>

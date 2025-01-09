@@ -27,12 +27,12 @@
           </ul>
         </div>
         <div class="w-full md:w-1/2 mt-10 md:mt-0 flex md:justify-start justify-center text-center mr-14 ">
-          <img src="public/banners/net3allem.png" alt="Net3allem Logo" class=" w-9/12 h-auto object-contain" />
+          <img  loading="lazy" src="public/banners/net3allem.png" alt="Net3allem Logo" class=" w-9/12 h-auto object-contain" />
         </div>
       </section>
       <!-- reality -->
       <section class="md:pt-28 pt-2 pb-16 md:px-[16%] px-8 text-grey20 text-lg text-center leading-loose ">
-        <h2 class="text-[40px] font-[1000] tracking-[0.2em] font-sans uppercase mb-2 text-ourPurple ">Our Reality</h2>
+        <h2 class="text-[40px] font-[1000] tracking-[0.2em]  uppercase mb-2 text-ourPurple ">Our Reality</h2>
         <div class="mb-10">
           <p class="text-base font-light">Research shows that 90% of brain development happens before the age of 5.</p>
         </div>
@@ -48,7 +48,7 @@
       <!-- houses section  -->
       <section class="flex flex-col items-center py-20">
         <!-- Image at the top -->
-        <img src="public/banners/houses.webp" alt="Houses" class="w-full md:h-auto h-[209px] object-cover animate__animated  animate__fadeInUp animate__slow animate__delay-0.5s " />
+        <img loading="lazy" src="public/banners/houses.webp" alt="Houses" class="w-full md:h-auto h-[209px] object-cover animate__animated  animate__fadeInUp animate__slow animate__delay-0.5s " />
       
         <!-- Text Box -->
         <div class=" w-full bg-opacity-90 bg-OurGreen md:py-10  md:px-[27%] p-10 text-center">

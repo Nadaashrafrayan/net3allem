@@ -8,6 +8,7 @@
 
       <!-- Animated GIF image with gradually increasing height -->
       <img
+      loading="lazy"
         src="/about/stratgy.GIF"
         alt="Our Strategic Priorities"
         class="animated-image"

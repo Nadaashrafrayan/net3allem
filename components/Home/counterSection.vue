@@ -6,7 +6,7 @@
     </h2>
 
     <!-- Counter -->
-    <div class="md:text-[160px] font-[1000] text-[120px] font-sans text-ourGrey">
+    <div class="md:text-[160px] font-[1000] text-[120px]  text-ourGrey">
       {{ counter }}
     </div>
 
@@ -19,7 +19,7 @@
     </div>
 
     <!-- Buttons for Sponsorship Options -->
-    <h3 class="md:text-[30px] mt-8 py-6 text-[27px] font-extrabold leading-9 font-sans uppercase text-ourOrange tracking-[0.2em]">Sponsor a student for:</h3>
+    <h3 class="md:text-[30px] mt-8 py-6 text-[27px] font-extrabold leading-9  uppercase text-ourOrange tracking-[0.2em]">Sponsor a student for:</h3>
 
     <div class="md:space-x-4 space-x-0 space-y-2 md:space-y-0 flex md:flex-row flex-col">
       <button

@@ -12,7 +12,7 @@
         <p class="text-xs md:text-sm text-white90 leading-relaxed tracking-wide py-2 md:py-4 animate__fadeInLeft">
           The Social Impact Fellowship Fund at the Harvard Innovation Lab was established in 2019 through the generosity of Alexander Navab, in honor of The Harvard Business School Campaign.
         </p>
-        <img src="/public/evaluation/awards/summer2022.webp" alt="Background Image" class="w-1/2 md:w-auto h-24 md:h-28 rounded-lg md:pr-44 animate__fadeInRight animate__animated animate__delay-0.5s">
+        <img loading="lazy" src="/public/evaluation/awards/summer2022.webp" alt="Background Image" class="w-1/2 md:w-auto h-24 md:h-28 rounded-lg md:pr-44 animate__fadeInRight animate__animated animate__delay-0.5s">
       </div>
 
        <a  class="px-4 md:px-6 py-2 text-white self-start hover:bg-white hover:text-OurGreen hover:border-OurGreen bg-OurGreen border border-white97 rounded transition duration-300 animate__slideInLeft animate__animated animate__delay-0.5s" href="https://innovationlabs.harvard.edu/social-impact-fellowship-fund" target="_blank" rel="noopener noreferrer">

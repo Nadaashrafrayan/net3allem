@@ -23,7 +23,7 @@
     <div class="w-full md:w-1/2 flex flex-col items-center">
       <!-- Main Display Image -->
       <div class="relative w-full h-auto border-2 md:border-4 px-2 border-white bg-white rounded-lg overflow-hidden mb-4 max-w-full">
-        <img :src="images[currentImageIndex]" alt="Gallery Image" class="w-full h-full object-cover transition duration-500 ease-in-out" />
+        <img loading="lazy" :src="images[currentImageIndex]" alt="Gallery Image" class="w-full h-full object-cover transition duration-500 ease-in-out" />
 
         <!-- Navigation Arrows for Main Image -->
         <button @click="prevImage" class="absolute left-0 top-1/2 transform -translate-y-1/2 text-2xl md:text-[40px] text-white97 p-2 rounded-full">
@@ -45,6 +45,7 @@
         <div ref="thumbnailContainer" class="flex gap-2 overflow-hidden w-full px-4 md:px-8">
           <div class="flex gap-2">
             <img
+            loading="lazy"
               v-for="(image, index) in images"
               :key="index"
               :src="image"

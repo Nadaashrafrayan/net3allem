@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col items-center justify-center py-5 bg-white container">
     <div class="text-center mb-8">
-      <h2 class="text-[46px] font-extrabold text-OurGreen font-sans uppercase tracking-[0.12em] leading-relaxed">
+      <h2 class="text-[46px] font-extrabold text-OurGreen  uppercase tracking-[0.12em] leading-relaxed">
         {{ topTitle }}
       </h2>
 
@@ -16,7 +16,7 @@
         @mouseleave="removeHoverAnimation"
       >
 
-        <img :src="item.icon" alt="" class="h-24 w-24" />
+        <img loading="lazy" :src="item.icon" alt="" class="h-24 w-24" />
         <h3 class="text-base font-light text-center text-white97 opacity-85">{{ item.title }}</h3>
       </div>
     </div>
@@ -30,7 +30,7 @@
         @mouseleave="removeHoverAnimation"
 
       >
-        <img :src="item.icon" alt="" class="w-24 h-24" />
+        <img loading="lazy" :src="item.icon" alt="" class="w-24 h-24" />
         <h3 class="text-base font-light text-white97 opacity-85">{{ item.title }}</h3>
       </div>
     </div>

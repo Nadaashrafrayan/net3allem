@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col items-center justify-center  bg-white px-6 text-center space-y-10 pt-10">
 
-  <h2 class="md:text-[56px] text-4xl font-[1000] text-ourOrange font-sans uppercase tracking-[0.16em]" style="font-family:'lulo-clean-w05-one-bold', sans-serif;">
+  <h2 class="md:text-[56px] text-4xl font-[1000] text-ourOrange   uppercase tracking-[0.16em]" style="font-family:'lulo-clean-w05-one-bold', sans-serif;">
     Contact US    </h2>
   </section>
   <FormDonate class="mt-20 pb-14"
@@ -15,12 +15,12 @@ We would love to hear from you!​"
   <!-- Address Section -->
   <div class=" space-y-4">
     <!-- Address Label and Link -->
-    <div  >      <p class="text-[18px] text-white text-opacity-85 font-thin font-sans">
+    <div  >      <p class="text-[18px] text-white text-opacity-85 font-thin  ">
 
       <a
       href="https://www.google.com/search?q=bedaya+for+charitable+activities+agouza+address&ludocid=5940033328224555277&sa=X&ved=2ahUKEwjoz9C7hfP8AhXwGlkFHdlhAswQ6BN6BAg-EAI"
         for="address"
-        class="text-[18px] text-white text-opacity-85 font-thin font-sans underline  cursor-pointer leading-loose "
+        class="text-[18px] text-white text-opacity-85 font-thin   underline  cursor-pointer leading-loose "
       >
         Address :
       </a>
@@ -36,11 +36,11 @@ We would love to hear from you!​"
 
       <label
         for="phone"
-        class="text-[18px] text-white text-opacity-85 font-thin font-sans underline cursor-pointer"
+        class="text-[18px] text-white text-opacity-85 font-thin   underline cursor-pointer"
       >
         Phone Number :
       </label>
-        <span class="text-[18px] text-white text-opacity-85 font-thin font-sans">+20 2 33026225</span>
+        <span class="text-[18px] text-white text-opacity-85 font-thin  ">+20 2 33026225</span>
       </p>
     </div>
 

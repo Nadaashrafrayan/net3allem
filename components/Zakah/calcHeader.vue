@@ -4,7 +4,7 @@
       
       <!-- Text Section (65% Width) -->
       <div class="md:w-[60%] w-full text-left py-8 ml-20 md:pt-16 md:pl-14 md:pr-40 pr-0 space-y-4 md:space-y-4">
-        <h2 class="md:text-[40px] text-2xl stroke-ourPurple stroke-1 font-[1000] pb-5  text-ourPurple font-sans uppercase leading-relaxed tracking-[0.1em]" style="font-family: 'lulo-clean-w01-one-bold', 'lulo-clean-w05-one-bold', sans-serif;">
+        <h2 class="md:text-[40px] text-2xl stroke-ourPurple stroke-1 font-[1000] pb-5  text-ourPurple uppercase leading-relaxed tracking-[0.1em]" style="font-family: 'lulo-clean-w01-one-bold', 'lulo-clean-w05-one-bold', sans-serif;">
           Zakah Calculator</h2>
         <p class="text-ourOrange text-opacity-90 font-thin text-xl md:text-lg">
           To determine your zakah, kindly input the total value of your assets owned throughout the entire year in the designated boxes below:
@@ -22,7 +22,7 @@
 
       <!-- Image Section (35% Width) -->
       <div class="md:w-[40%] w-full ">
-        <img src="public/zakah.webp" alt="Zakah Calculator" class="w-full  " />
+        <img loading="lazy" src="public/zakah.webp" alt="Zakah Calculator" class="w-full  " />
       </div>
 
     </section>

@@ -1,9 +1,9 @@
 <template>
   <section class="flex flex-col items-center justify-center  bg-white px-6 text-center space-y-10 pt-10">
     <!-- Title -->
-    <h2 class="md:text-[56px] text-4xl font-[1000] text-OurGreen font-sans uppercase tracking-[0.2em]" style="font-family:'lulo-clean-w05-one-bold', sans-serif;">
+    <h2 class="md:text-[56px] text-4xl font-[1000] text-OurGreen   uppercase tracking-[0.2em]" style="font-family:'lulo-clean-w05-one-bold', sans-serif;">
 Donate    </h2>
-<p class="max-w-[51rem]  text-gray-400 text-lg font-thin font-sans leading-relaxed tracking-wide ">
+<p class="max-w-[51rem]  text-gray-400 text-lg font-thin   leading-relaxed tracking-wide ">
   Thank you for choosing to donate.<span class="text-xl">NET3ALLEM</span>  is a project under Bedaya <span class="text-xl">NGO</span> and is registered at the Ministry of Social Solidarity under Registration Number 2289. ​With your support we will be able to make more dreams come true to achieve our mission of providing early childhood education and beyond through women employment. The full donation amount will go directly towards education and initiatives tailored to the needs of the community we serve.
 </p>
 <a href="https://bedayango.org/donation/payment/donate/44?number=200" target="_blank">
@@ -30,7 +30,7 @@ Donate    </h2>
           </footer>
         </blockquote>
       </div>
-      <img src="public/donate.webp" alt="Houses" class="md:w-1/2 md:h-[468px] h-[209px] object-cover w-full    " />
+      <img loading="lazy" src="public/donate.webp" alt="Houses" class="md:w-1/2 md:h-[468px] h-[209px] object-cover w-full    " />
 
     </section>
     <FormDonate 

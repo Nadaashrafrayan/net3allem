@@ -59,6 +59,9 @@ export default {
         grey50: "#525252",
         grey60: "#999999",
       },
+      fontFamily: {
+        jost: ["Jost", "sans-serif"],
+      },
     },
   },
   plugins: [],

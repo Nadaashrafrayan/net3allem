@@ -1,7 +1,7 @@
 <template>  
   <div class="bg-white pt-16 md:px-48 px-3 min-h-[90vh]">
     <h2 
-      class="md:text-3xl text-2xl font-[1000] text-OurGreen font-sans uppercase leading-loose tracking-[0.16em]" 
+      class="md:text-3xl text-2xl font-[1000] text-OurGreen  uppercase leading-loose tracking-[0.16em]" 
       style="font-family:'lulo-clean-w05-one-bold', sans-serif;"
     >
       Calculate your zakah
