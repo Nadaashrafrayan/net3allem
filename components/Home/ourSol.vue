@@ -1,19 +1,19 @@
 <template>
-  <section class="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-5 mx-auto max-w-7xl items-center bg-ourOrange text-white90 py-10 px-4 md:px-12 min-h-screen overflow-hidden">
+  <section class="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-5 mx-auto max-w-7xl items-start bg-ourOrange text-white90 py-20 px-4 md:px-32  overflow-hidden">
     <!-- Left Side: Solution Content -->
-    <div class="w-full md:w-1/2 space-y-4 mx-4 text-left font-thin tracking-[0.1em] pt-4 px-4 md:px-0">
+    <div class="w-full md:w-1/2 space-y-10 mx-4 text-left font-thin tracking-[0.1em] pt-4 px-4 md:px-0">
       <h3 class="text-2xl md:text-[40px] font-bold uppercase text-white97 tracking-[0.18em]">Our Solution</h3>
-      <p class="text-sm md:text-base font-light">
+      <p class="text-sm md:text-xl font-light">
         Our solution is three-fold:
       </p>
-      <ul class="list-decimal list-outside space-y-6 pl-5">
-        <li class="text-sm md:text-base leading-relaxed">
+      <ul class="list-decimal list-outside space-y-4 pl-5">
+        <li class="text-sm md:text-lg leading-relaxed pb-5">
           We <strong class="font-bold text-white97">empower</strong> teachers by providing professional development workshops for optimal teaching and learning environments. We directly train women from the community to become teachers at our own pre-schools or indirectly through partnerships with NGOs, acting as their professional development providers.
         </li>
-        <li class="text-sm md:text-base leading-relaxed">
+        <li class="text-sm md:text-lg leading-relaxed pb-5">
           We give our students at Net3allem a safe space to <strong class="font-bold text-white97">learn</strong> and <strong class="font-bold text-white97">grow</strong>. Students graduate from Net3allem with Grade 2 Egyptian curriculum proficiency, enabling them to excel in school.
         </li>
-        <li class="text-sm md:text-base leading-relaxed">
+        <li class="text-sm md:text-lg leading-relaxed pb-5">
           We give parent workshops, guide parents to follow play-based child-parent interaction, and raise awareness to tackle common myths within the community.
         </li>
       </ul>

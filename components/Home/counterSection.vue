@@ -26,13 +26,13 @@
         @click="sponsorOption('month')"
         class="md:px-6 px-10 py-2 bg-OurGreen text-white font-semibold rounded-[10px] hover:border-[1px] hover:text-ourGrey hover:bg-transparent"
       >
-        Month (700 EGP)
+        Month (800 EGP)
       </button>
       <button
         @click="sponsorOption('year')"
         class="md:px-6 px-10 py-2 bg-OurGreen text-white font-semibold rounded-[10px] hover:border-[1px] hover:text-ourGrey hover:bg-transparent"
       >
-        Year (8400 EGP)
+        Year (9,600 EGP)
       </button>
     </div>
   </section>
@@ -43,7 +43,7 @@ export default {
   data() {
     return {
       counter: 0,
-      target: 6615, // Target number for the counter
+      target:  8454 , // Target number for the counter
       interval: null, // Interval ID
     };
   },
@@ -65,9 +65,9 @@ export default {
     },
     sponsorOption(option) {
       if (option === 'month') {
-        window.open('https://bedayango.org/donation/payment/donate/44?amount=700&name=&email=&phone=', '_blank');
+        window.open('https://bedayango.org/donation/payment/donate/44?amount=800&name=&email=&phone=', '_blank');
       } else if (option === 'year') {
-        window.open('https://bedayango.org/donation/payment/donate/44?amount=8400&name=&email=&phone=', '_blank');
+        window.open('https://bedayango.org/donation/payment/donate/44?amount=9600&name=&email=&phone=', '_blank');
       }
     },
   },

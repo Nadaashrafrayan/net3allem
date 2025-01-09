@@ -14,10 +14,12 @@
         <img src="/public/evaluation/awards/21221.webp" alt="Background Image" class=" w-[300px] h-36 rounded-lg animate__fadeIn animate__animated animate__delay-1s">
         <img src="/public/evaluation/awards/21222.webp" alt="Background Image" class=" w-[300px] h-36 object-contain rounded-lg animate__fadeIn animate__animated animate__delay-1s">
       </div>
-
-      <button class="px-4 md:px-6 py-2 text-white self-start bg-OurGreen border border-white97 rounded transition duration-300 animate__slideInLeft animate__animated animate__delay-0.5s">
+      <a  class="px-4 md:px-6 py-2  hover:bg-white hover:text-OurGreen hover:border-OurGreen text-white self-start bg-OurGreen border border-white97 rounded transition duration-300 animate__slideInLeft animate__animated animate__delay-0.5s" href="https://zaentz.gse.harvard.edu/fellows-program/" target="_blank" rel="noopener noreferrer">
+      <button>
         Learn More
       </button>
+    </a>
+
     </div>
   </div>
 </template>

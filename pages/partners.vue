@@ -30,7 +30,8 @@ export default {
         "/parteners/egypt.png",
         "/parteners/harvard.png",
         "/parteners/bloom.png",
-        "/parteners/zeede.png"
+        "/parteners/zeede.png",
+        "/parteners/World.png"
       ]
     };
   }

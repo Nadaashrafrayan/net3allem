@@ -36,7 +36,7 @@
               <button
                 @click="toggleDropdown"
                 type="button"
-                class="w-full border border-gray-300 p-3   bg-gray-50 text-white97 focus:outline-none flex justify-between items-center"
+                class="w-full border border-gray-300 p-3   bg-gray-50 text-ourGrey focus:outline-none flex justify-between items-center"
               >
                 {{ selectedCode }} <span class="ml-2">▼</span>
               </button>
